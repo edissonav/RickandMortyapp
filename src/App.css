@@ -1,0 +1,109 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+ 
+  text-align: center;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 320px) {
+  header{
+    display: flex;
+    
+  }
+  header>img{
+    width: 90%;
+    max-height: 30%;
+    margin: 0 5%;
+    box-shadow: -1px 5px 32px 16px rgba(59,179,85,0.7);
+-webkit-box-shadow: -1px 5px 32px 16px rgba(59,179,85,0.7);
+-moz-box-shadow: -1px 5px 32px 16px rgba(59,179,85,0.7);
+  }
+  nav{
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+    justify-content: space-between;
+    padding: 3rem;
+    gap: 1rem;
+    
+  }
+  nav>h1{
+    display: flex;
+    flex-direction: column;
+
+  }
+  nav>div{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    
+  }
+  
+  .wiki{
+    margin: 1rem 15%;
+  }
+  .input{
+    margin: 1rem 5%;
+    box-shadow: -1px 5px 32px 16px rgba(59,179,85,0.7);
+-webkit-box-shadow: -1px 5px 32px 16px rgba(59,179,85,0.7);
+-moz-box-shadow: -1px 5px 32px 16px rgba(59,179,85,0.7);
+    border-radius: 10%;
+  }
+  input{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 6vh;
+    margin: auto;
+    border: 1px solid darkcyan;
+  }
+  button{
+    min-width: fit-content;
+    width: 10%;
+    height: 6vh;
+    margin: auto;
+  }
+  .residents{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+  } 
+  .residentcard{
+    display: flex;
+    margin: auto;
+    background-color: rgb(54, 49, 49);
+    border-radius: 5px;
+  }
+  .resident-img>img{
+    margin: 1rem;
+    width: 90%;
+    height: 90%;
+
+  }
+   .resident-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    gap: 1rem;
+   }
+}
+@media screen and (min-width: 678px) {
+  .residents{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .residentcard{
+    box-shadow: -1px 5px 32px 16px rgba(59,179,85,0.7);
+-webkit-box-shadow: -1px 5px 32px 16px rgba(59,179,85,0.7);
+-moz-box-shadow: -1px 5px 32px 16px rgba(59,179,85,0.7);
+  }
+
+  
+}
